@@ -1,0 +1,168 @@
+:root {
+    --bg: #0A0A0B;
+    --accent: #A855F7;
+    --text: #F3F4F6;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; scroll-behavior: smooth; }
+
+.accent { color: var(--accent); }
+.container { padding: 80px 10%; }
+.glass {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+}
+
+/* Navbar */
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 10%; position: fixed; width: 100%; top: 0; z-index: 1000;
+}
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: var(--accent); }
+
+/* Hero */
+.hero {
+    height: 100vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920');
+    background-size: cover; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.hero h1 { font-family: 'Montserrat'; font-size: 5rem; line-height: 1.1; margin-bottom: 20px; }
+
+/* Cards & Hover Effects */
+.hover-card { transition: transform 0.4s ease, border-color 0.4s; cursor: pointer; }
+.hover-card:hover { transform: translateY(-10px); border-color: var(--accent); }
+
+/* Stats */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: -50px; }
+.stat-card { padding: 40px; text-align: center; }
+.stat-card h2 { font-size: 3rem; color: var(--accent); }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
+    .nav-links { display: none; }
+    .pricing-grid { grid-template-columns: 1fr; }
+}
+
+/* Buttons */
+.btn { padding: 12px 30px; border-radius: 50px; text-decoration: none; transition: 0.3s; display: inline-block; }
+.primary { background: var(--accent); color: white; }
+.secondary { border: 1px solid var(--accent); color: white; }
+.primary:hover { box-shadow: 0 0 20px var(--accent); }
+
+/* About Page Specifics */
+.hero-small {
+    height: 50vh;
+    background: linear-gradient(rgba(10, 10, 11, 0.8), rgba(10, 10, 11, 0.8)), 
+                url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1920');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-small h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat';
+}
+
+/* Story Section */
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.story-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.story-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.s-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+/* Values Section */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    padding: 40px;
+    text-align: center;
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.text-center { text-align: center; }
+
+/* Footer */
+footer {
+    margin: 50px 10% 20px 10%;
+    padding: 40px !important;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.socials a { color: white; transition: 0.3s; }
+.socials a:hover { color: var(--accent); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-small h1 {
+        font-size: 2.5rem;
+    }
+}

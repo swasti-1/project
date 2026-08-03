@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANTAGE | Elite Fitness for Professionals</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo">VANTAGE<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>ELEVATE YOUR <span class="accent">HUSTLE.</span></h1>
+            <p>High-performance fitness for the modern professional. Open 24/7. 100% Result Driven.</p>
+            <div class="hero-btns">
+                <a href="#pricing" class="btn primary">Start Now</a>
+                <a href="#about" class="btn secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Counters -->
+    <section class="stats container">
+        <div class="stat-card glass hover-card">
+            <h2 class="counter" data-target="1500">0</h2>
+            <p>Active Members</p>
+        </div>
+        <div class="stat-card glass hover-card">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Elite Trainers</p>
+        </div>
+        <div class="stat-card glass hover-card">
+            <h2 class="counter" data-target="24">0</h2>
+            <p>Hours Access</p>
+        </div>
+    </section>
+
+    <!-- Membership/Pricing Section -->
+    <section id="pricing" class="pricing container">
+        <h2 class="section-title">CHOOSE YOUR <span class="accent">PLAN</span></h2>
+        <div class="pricing-grid">
+            <div class="price-card glass hover-card">
+                <h3>Executive</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 24/7 Access</li>
+                    <li><i class="fas fa-check"></i> Modern Equipment</li>
+                    <li><i class="fas fa-xmark"></i> Personal Trainer</li>
+                </ul>
+                <button class="btn secondary">Join Now</button>
+            </div>
+            <div class="price-card glass hover-card featured">
+                <div class="badge">Most Popular</div>
+                <h3>Elite Pro</h3>
+                <div class="price">$89<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Everything in Executive</li>
+                    <li><i class="fas fa-check"></i> 4 Personal Sessions</li>
+                    <li><i class="fas fa-check"></i> Steam & Sauna</li>
+                </ul>
+                <button class="btn primary">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-item glass">
+            <div class="faq-question">Can I pause my membership for business travel? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">Yes, our Executive and Elite plans allow for up to 30 days of "travel freeze" per year.</div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="contact container">
+        <div class="contact-grid">
+            <form class="contact-form glass">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn primary">Send Inquiry</button>
+            </form>
+            <div class="map glass">
+                <!-- Standard Google Maps Placeholder -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480293%3A0x517e3733f8615e5a!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1647450000000!5m2!1sen!2sus" width="100%" height="300" style="border:0; filter: grayscale(1) invert(0.9);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
